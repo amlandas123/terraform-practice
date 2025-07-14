@@ -1,5 +1,5 @@
 variable "batch" {
-    default = "batch56"
+    default = [apple,mango,orange]
   
 }
 
@@ -8,6 +8,6 @@ variable "batch" {
 # }
 
 output "display1" {
-    value = "The latest batch running is ${var.batch}"
+    value = "My favourite fruit is ${var.batch[1]}"
   
 }
