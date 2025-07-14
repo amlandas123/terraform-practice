@@ -1,4 +1,8 @@
-output "display" {
-    value = "Hello World"
+variable "simple" {
+    default = "peacok"
   
+}
+
+output "display" {
+    value = var.simple
 }
