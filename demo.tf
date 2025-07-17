@@ -46,5 +46,5 @@ variable "map_variable" {
   }
 }
 output "map_output" {
-  value = "I have a ${var.map_variable["machine"]} machine with an uptime of ${var.map_variable["uptime"]} and the app owner is ${var.map_variable["app_owner"]} and patching status ${var.map_variable["patch_update"]}}"
+  value = "I have a ${var.map_variable["machine"]} machine with an uptime of ${var.map_variable["uptime"]} days and the app owner is ${var.map_variable["app_owner"]} and patching status ${var.map_variable["patch_update"]}}"
 }
