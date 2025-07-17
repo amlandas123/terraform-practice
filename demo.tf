@@ -11,3 +11,12 @@ output "display1" {
     value = "My name is ${var.name}"
   
 }
+
+variable "number" {
+    default = 100
+  
+}
+
+output "num_op" {
+  value = var.number
+}
