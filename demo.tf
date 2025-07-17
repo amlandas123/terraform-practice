@@ -20,3 +20,17 @@ variable "number" {
 output "num_op" {
   value = var.number
 }
+
+variable "list_type" {
+    default = [
+        "Amlan",
+        36,
+        "Namrup",
+        false
+    ]
+  
+}
+
+output "list_output" {
+  value = "My name is ${var.list_type[0]} and my birth place is ${var.list_type[2]} and my age is ${var.list_type[1]} and iam bad is ${var.list_type[3]}"
+}
