@@ -1,5 +1,5 @@
-variable "batch" {
-    default = [apple,mango,orange]
+variable "name" {
+    default = "Amlan Das"
   
 }
 
@@ -8,6 +8,6 @@ variable "batch" {
 # }
 
 output "display1" {
-    value = "My favourite fruit is ${var.batch[1]}"
+    value = "My name is ${var.name}"
   
 }
