@@ -5,4 +5,8 @@ resource "aws_instance" "dasa" {
     tags = {
         name = "Hello-World-instance"
     }
-}  
+} 
+
+resource "aws_ebs_volume" "my_volume" {
+  # Leave this block empty for now
+}
