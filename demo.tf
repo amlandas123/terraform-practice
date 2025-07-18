@@ -48,3 +48,16 @@ variable "map_variable" {
 output "map_output" {
   value = "I have a ${var.map_variable["machine"]} machine with an uptime of ${var.map_variable["uptime"]} days and the app owner is ${var.map_variable["app_owner"]} and patching status ${var.map_variable["patch_update"]}"
 }
+
+variable "mapped_var" {
+  default = {
+    "fruit" = "mango",
+    "vegetable" = "tomato",
+    "weight" = 70 
+  }
+  
+}
+output "mapped_out" {
+  value = "My favourite fruit is ${var.mapped_var["fruit"]} and favourite veggie is ${var.mapped_var["vegetable"]} and my current weight is ${var.mapped_var["weight"]}"
+  
+}
