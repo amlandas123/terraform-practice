@@ -5,4 +5,4 @@ resource "aws_instance" "dasa" {
     tags = {
         name = "Hello-World-instance"
     }
-  
+}  
