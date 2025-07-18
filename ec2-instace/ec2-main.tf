@@ -8,5 +8,6 @@ resource "aws_instance" "dasa" {
 } 
 
 resource "aws_ebs_volume" "my_volume" {
+    availability_zone    = "us-east-1a"
   # Leave this block empty for now
 }
