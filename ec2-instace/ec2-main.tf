@@ -1,5 +1,5 @@
 resource "aws_instance" "dasa" {
-    ami = "ami-0fcc78c828f981df2"
+    ami = "ami-0fcc78c828f981df2"     ## arguements
     instance_type = "t3.micro"
 
     tags = {
@@ -15,4 +15,8 @@ resource "aws_ebs_volume" "my_volume" {
       name: "dasa-volume" 
     }
   # Leave this block empty for now
+}
+
+output "instance_id" {
+  value = aws_instance.dasa.id
 }
