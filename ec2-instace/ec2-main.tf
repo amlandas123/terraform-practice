@@ -25,7 +25,7 @@ output "instance_id" {
 resource "aws_security_group" "amlan-web_sg" {
   name        = "web-sg"
   description = "Allow HTTP and SSH"
-  vpc_id      = aws_vpc.main_vpc.id  # Use your VPC ID if already existing
+  #vpc_id      = aws_vpc.main_vpc.id  # Use your VPC ID if already existing
 
   ingress {
     description = "Allow SSH"
