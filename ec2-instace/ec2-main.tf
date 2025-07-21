@@ -18,5 +18,5 @@ resource "aws_ebs_volume" "my_volume" {
 }
 
 output "instance_id" {
-  value = aws_instance.dasa.id
+  value = aws_instance.dasa.id   ## attributes
 }
