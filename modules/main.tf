@@ -19,3 +19,7 @@ module "local-module" {
 output "public_ip" {
   value = module.local-module.public_ip
 }
+
+output "instance_id" {
+  value = module.local-module.instance_id
+}

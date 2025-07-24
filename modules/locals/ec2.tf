@@ -6,3 +6,7 @@ resource "aws_instance" "dasa-amlan" {
 output "public_ip" {
   value = aws_instance.dasa-amlan.public_ip
 }
+
+output "instance_id" {
+    value = aws_instance.dasa-amlan.id
+}
