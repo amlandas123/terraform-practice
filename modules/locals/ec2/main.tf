@@ -15,7 +15,7 @@ resource "aws_instance" "dasa-amlan" {
     provisioner "local-exec" {
       command = <<EOF
         sleep 30
-        cd /home/devops
+        cd /tmp
         touch welcome2025.txt
       EOF
     }
