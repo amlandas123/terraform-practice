@@ -9,10 +9,10 @@ resource "aws_instance" "dasa-amlan" {
     vpc_security_group_ids = [var.sg2025]
 } 
 
-output "public_ip" {
-  value = aws_instance.dasa-amlan.public_ip
-}
+# output "public_ip" {
+#   value = aws_instance.dasa-amlan.public_ip
+# }
 
-output "instance_id" {
-    value = aws_instance.dasa-amlan.id
-}
+# output "instance_id" {
+#     value = aws_instance.dasa-amlan.id
+# }

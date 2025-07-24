@@ -20,11 +20,11 @@ module "ec2" {
 module "sg" {
     source = "./locals/sg"
 }
-output "public_ip" {
-  value = module.local-module.public_ip
-}
+# output "public_ip" {
+#   value = module.local-module.public_ip
+# }
 
-output "instance_id" {
-  value = module.local-module.instance_id
-}
+# output "instance_id" {
+#   value = module.local-module.instance_id
+# }
 
