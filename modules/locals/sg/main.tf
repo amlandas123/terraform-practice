@@ -32,6 +32,6 @@ resource "aws_security_group" "amlan-web_sg2025" {
   }
 }
 
-output "sg" {
+output "sg2025" {
     value = aws_security_group.amlan-web_sg2025.id
 }

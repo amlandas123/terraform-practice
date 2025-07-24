@@ -12,10 +12,14 @@ terraform {
   }
 }
 
-module "local-module" {
-  source = "./locals"
+module "ec2" {
+  source = "./locals/ec2"
+  sg2025 = module.sg.sg2025
 }
 
+module "sg" {
+    source = "./locals/sg"
+}
 output "public_ip" {
   value = module.local-module.public_ip
 }
@@ -24,7 +28,3 @@ output "instance_id" {
   value = module.local-module.instance_id
 }
 
-output "sg" {
-    value = module.local-module.
-  
-}
