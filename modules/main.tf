@@ -13,3 +13,7 @@ terraform {
 module "local-module" {
   source = "./locals"
 }
+
+output "public_ip" {
+  value = module.local-module.public_ip
+}
