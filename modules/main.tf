@@ -23,3 +23,8 @@ output "public_ip" {
 output "instance_id" {
   value = module.local-module.instance_id
 }
+
+output "sg" {
+    value = module.local-module.
+  
+}
