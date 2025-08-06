@@ -12,14 +12,11 @@ resource "aws_instance" "dasa-amlan" {
       Name = "dasa-demo-instance"
     }
 
-    provisioner "local-exec" {
-      command = <<EOF
-        sleep 30
-        cd /tmp
-        touch welcome2025.txt
-      EOF
-    }
-  } 
+}
+
+output "private_ip" {
+  value = aws_instance.dasa-amlan.private_ip
+}
 
 # output "public_ip" {
 #   value = aws_instance.dasa-amlan.public_ip
